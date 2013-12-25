@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+
+BUILD="$(pwd)"
+cd "$BUILD"/mpv
+
+if [ -x "bootstrap.py" ]; then
+  ./bootstrap.py $@
+fi
+
