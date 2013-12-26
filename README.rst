@@ -44,7 +44,7 @@ Install mpv with:
 
     sudo ./install
 
-mpv doesn't need to be installed. The binary ./mpv/mpv can be used as-is. Note
+mpv doesn't need to be installed. The binary ./mpv/build/mpv can be used as-is. Note
 that libass and ffmpeg will be statically linked with mpv when using the
 provided scripts, and no ffmpeg or libass libraries are/need to be installed.
 
