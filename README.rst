@@ -36,17 +36,13 @@ and can be used to update ffmpeg/libass/mpv later.)
 
 Build mpv and ffmpeg/libass with:
 
-    make clean                        # sometimes needed to build successfully
+    ./make clean                        # sometimes needed to build successfully
 
-    make
+    ./make
 
 Install mpv with:
 
-    sudo make install
-
-Or if you don't want debugging symbols (smaller binaries):
-
-    sudo make install-strip
+    sudo ./make install
 
 mpv doesn't need to be installed. The binary ./mpv/mpv can be used as-is. Note
 that libass and ffmpeg will be statically linked with mpv when using the

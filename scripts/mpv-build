@@ -1,8 +1,0 @@
-#!/bin/sh
-set -e
-
-OPTIONS=""
-
-BUILD="$(pwd)"
-cd "$BUILD"/mpv
-PKG_CONFIG_PATH="$BUILD"/build_libs/lib/pkgconfig ./waf build $OPTIONS "$@"
