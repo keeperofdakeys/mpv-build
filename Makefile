@@ -30,15 +30,16 @@ noconfig:
 	$(MAKE) -C mpv
 
 install:
-	$(MAKE) -C mpv install
+	cd mpv && ./waf install
 
 uninstall:
-	$(MAKE) -C mpv uninstall
+	cd mpv && ./waf uninstall
 
 clean:
 	-rm -rf ffmpeg_build build_libs
 	#-$(MAKE) -C fribidi distclean
 	-$(MAKE) -C libass distclean
 	-$(MAKE) -C mpv distclean
+	-cd mpv && ./waf clean
 
 .PHONY: mpv-config mpv ffmpeg-config ffmpeg fribidi-config fribidi libass-config libass noconfig install uninstall clean
