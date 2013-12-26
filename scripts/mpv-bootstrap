@@ -1,8 +1,7 @@
 #!/bin/sh
 set -e
 
-BUILD="$(pwd)"
-cd "$BUILD"/mpv
+cd mpv
 
 if [ -x "bootstrap.py" ]; then
   ./bootstrap.py $@
